@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main01 {
-    //Напишите функцию, которая принимает на вход ArrayList целых чисел и возвращает их сумму.
+    //Write a function that takes an ArrayList of integers as input and returns their sum.
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         ArrayList<Integer> nums = new ArrayList<>();
-        System.out.println(" Я принимаю числа и возвращаю их сумму ");
-        System.out.println(" напишите букву q как закончите с суммами  ");
+        System.out.println(" I accept the numbers and return their sum ");
+        System.out.println(" write the letter q as soon as you finish with the sums  ");
 
         while (true){
             String q = sc.nextLine();
@@ -21,7 +21,7 @@ public class Main01 {
                 int num = Integer.parseInt(q);
                 nums.add(num);
             }catch (NumberFormatException e){
-                System.out.println("Введите число правильно ");
+                System.out.println("Enter the number correctly ");
             }
 
         }
@@ -30,6 +30,6 @@ public class Main01 {
             sum += num;
         }
 
-        System.out.println("Сумма чисел: " + sum);
+        System.out.println("Sum of numbers: " + sum);
     }
 }

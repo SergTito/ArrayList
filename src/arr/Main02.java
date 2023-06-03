@@ -3,8 +3,8 @@ package arr;
 import java.util.ArrayList;
 
 public class Main02 {
-    //–еализуйте функцию, котора€ удал€ет все повтор€ющиес€ элементы из ArrayList,
-    // оставл€€ только уникальные значени€.
+    //Implement a function that removes all duplicate elements from the ArrayList,
+    // leaving only unique values.
     public static void main(String[] args) {
 
         ArrayList<Integer> nums = new ArrayList<>();
@@ -27,6 +27,6 @@ public class Main02 {
         }
         nums.clear();
         nums.addAll(unicNums);
-        System.out.println("”никальные числа " + unicNums);
+        System.out.println("Unique numbers " + unicNums);
     }
 }

@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main00 {
-    //Создайте программу, которая позволяет пользователю вводить числа с клавиатуры и сохранять их в ArrayList.
-    // После ввода чисел, выведите их на экран.
+    //Create a program that allows the user to enter numbers from the keyboard and save them in an ArrayList.
+    // After entering the numbers, display them on the screen.
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
         ArrayList<Integer> list = new ArrayList<>();
-        System.out.println("Введите числа (для завершении программы нажмите q )");
+        System.out.println("Enter the numbers (to end the program, press q )");
 
         while (true){
             String q = sc.nextLine();
@@ -22,9 +22,9 @@ public class Main00 {
                 int num = Integer.parseInt(q);
                 list.add(num);
             }catch (NumberFormatException e){
-                System.out.println("Неправильный ввод ");
+                System.out.println("Incorrect input ");
             }
-            System.out.println("Введенные числа ");
+            System.out.println("Entered numbers ");
             for (int nums : list){
                 System.out.println(nums);
             }

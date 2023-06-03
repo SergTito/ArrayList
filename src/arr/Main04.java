@@ -4,24 +4,24 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main04 {
-    //Создайте игру "Угадай число". Программа должна генерировать случайное число, а пользователь
-    // должен угадать его. Каждая попытка пользователя сохраняется в ArrayList,
-    // и после угадывания числа выводится история попыток.
+    //Create a "Guess the Number" game. The program should generate a random number, and the user
+    // should guess it. Each user's attempt is saved in an ArrayList,
+    // and after guessing the number, the history of attempts is displayed.
 
     public static void main(String[] args) {
-        System.out.println("программа загадала число ");
+        System.out.println("the program made a number ");
         int randomNumber = (int) (Math.random() * 50);
         ArrayList<Integer> tryingToGuessNumber = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
-        System.out.print("напиши число от 0 до 50");
-        System.out.println("Если захочешь выйти из игрый введите любую букву");
+        System.out.print("write a number from 0 to 50");
+        System.out.println("If you want to get out of the game, enter any letter");
         while (scanner.hasNextInt()) {
 
             int numberUser = scanner.nextInt();
             if (numberUser != randomNumber) {
-                System.out.println("Ты не угадал попробуй еще раз ");
+                System.out.println("You didn't guess it try again ");
             } else {
-                System.out.println("Ура ты угадал!!");
+                System.out.println("Hooray you guessed it!!");
                 break;
             }
             tryingToGuessNumber.add(numberUser);
@@ -29,12 +29,12 @@ public class Main04 {
 
         }
 
-        System.out.println("Список попыток :");
+        System.out.println("List of attempt:");
         for (int trying : tryingToGuessNumber) {
             System.out.println(trying);
         }
 
-        System.out.println("Программа загадала число " + randomNumber);
+        System.out.println("The program made a number " + randomNumber);
 
     }
 

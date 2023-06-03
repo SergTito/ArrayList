@@ -5,18 +5,18 @@ import java.util.Scanner;
 
 public class Main03 {
 
-    //Напишите программу, которая принимает на вход список имен и фамилий людей, сохраняет
-    // их в ArrayList и выводит на экран только имена.
+    //Write a program that accepts a list of names and surnames of people as input, saves
+    // them in an ArrayList and displays only names on the screen.
 
     public static void main(String[] args) {
 
-        System.out.println("Данная программа принимает на вход список имен и фамилий людей, сохраняя" +
-                " в ArrayList и выводит на экран только имена Напишите q как закончите ");
+        System.out.println("This program accepts a list of names and surnames of people as input, saving the " +
+                " in the ArrayList and displays only the names on the screen Write q as you finish");
         Scanner scanner = new Scanner(System.in);
         ArrayList<String> addNameAndSurname = new ArrayList<>();
         while (true) {
 
-            System.out.print("Имя и Фамилия : ");
+            System.out.print("name and surname : ");
             String nameAndSurname = scanner.nextLine();
 
 
@@ -25,7 +25,7 @@ public class Main03 {
             }
             addNameAndSurname.add(nameAndSurname);
         }
-        System.out.println("Имена :");
+        System.out.println("Names :");
         for (String split : addNameAndSurname) {
             String s[] = split.split(" ");
             String firstName = s[0];
